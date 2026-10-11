@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Hari Istimewamu ❤️</title>
+<style>
+:root{--wine:#4b071b;--wine2:#710d2b;--rose:#c45a73;--gold:#e7c58a;--cream:#fff4eb}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Georgia,'Times New Roman',serif;color:var(--cream);background:radial-gradient(circle at top,#7a1734 0,#3a0617 48%,#1d0310 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#f3d5a0 1px,transparent 1px);background-size:36px 36px}
+.wrap{width:min(920px,92%);margin:0 auto;padding:42px 0 60px;position:relative}
+.card{border:1px solid rgba(231,197,138,.65);border-radius:24px;padding:clamp(22px,5vw,48px);background:linear-gradient(145deg,rgba(91,8,32,.88),rgba(35,3,17,.92));box-shadow:0 24px 70px #12000899;text-align:center;position:relative;overflow:hidden}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--gold)}
+h1{font-size:clamp(2.4rem,7vw,4.8rem);line-height:1.05;font-weight:normal;margin:18px 0 12px;color:#fff1dc}
+h1 span{color:var(--gold);font-style:italic}
+.subtitle{color:#f0cbd1;font-size:1.1rem;line-height:1.7;max-width:590px;margin:0 auto 26px}
+.ornament{color:var(--gold);letter-spacing:.5em;margin:20px 0}
+.photo-frame{width:min(300px,100%);height:300px;margin:0 auto 22px;padding:8px;border:1px solid var(--gold);border-radius:180px 180px 24px 24px;background:#fff1dc0d;box-shadow:0 0 35px #e7c58a20;overflow:hidden}
+.photo-frame img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.photo-placeholder{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;color:#f2cdd4;font:14px Arial,sans-serif;padding:20px}
+.photo-placeholder strong{font:normal 3.4rem Georgia}
+label.upload{display:inline-block;margin:4px auto 24px;padding:11px 18px;border:1px solid var(--gold);border-radius:30px;color:var(--gold);cursor:pointer;font:13px Arial,sans-serif;transition:.2s}
+label.upload:hover{background:#e7c58a1a}
+input[type=file]{display:none}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:620px;margin:0 auto 22px;text-align:left}
+.fields label{font:12px Arial,sans-serif;color:#e8bdc8;display:block}
+.fields input,.fields textarea{margin-top:7px;width:100%;padding:12px 13px;border-radius:12px;border:1px solid #a54a62;background:#260411;color:#fff5ec;font:14px Arial,sans-serif;outline:none}
+.fields textarea{resize:vertical;min-height:75px}
+.full{grid-column:1/-1}
+button{border:0;border-radius:30px;padding:14px 25px;background:linear-gradient(120deg,#e7c58a,#c99550);color:#3c0717;font-weight:bold;cursor:pointer;box-shadow:0 7px 22px #12000855;font-size:14px}
+button:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.letter{display:none;max-width:650px;margin:28px auto 0;padding:25px 22px;border-top:1px solid #c9955066;border-bottom:1px solid #c9955066;line-height:1.9;color:#f8e5df;text-align:left;white-space:pre-line;animation:rise .8s ease}
+.letter.show{display:block}
+.signature{text-align:right;color:var(--gold);font-style:italic;margin-top:16px}
+footer{color:#d9a7b3;font:11px Arial,sans-serif;letter-spacing:.1em;margin-top:24px}
+.heart{position:fixed;bottom:-30px;color:#e6a2b0;opacity:0;pointer-events:none;animation:float 8s linear infinite}
+@keyframes float{0%{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.65}90%{opacity:.35}100%{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:560px){.fields{grid-template-columns:1fr}.full{grid-column:auto}.photo-frame{height:260px;width:260px}.wrap{padding:20px 0 35px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main class="card">
+    <div class="eyebrow">A little Celebration From Your Friend</div>
+    <div class="ornament">✦ ❧ ✦</div>
+    <h1>Happy Birthday,<br><span id="titleName">Azzyyy</span></h1>
+    <p class="subtitle">Hari ini dunia terasa sedikit lebih indah, karena seseorang seistimewa kamu sedang merayakan hari lahirnya. ❤️</p>
+
+    <div class="photo-frame" id="photoFrame">
+      <img src="image/1.jpg">
+    </div>
+    <label class="upload" for="photoInput">♡ Pilih foto kenangan</label>
+    <input id="photoInput" type="file" accept="image/*">
+
+    <div class="fields">
+      <label>Nama yang berulang tahun
+        <input value="Azzyyy">
+      </label>
+      <label>Nama pengirim
+        <input id="senderInput" type="text" placeholder="Namamu" value="Seseorang yang menyayangimu">
+      </label>
+      <label class="full">Pesan singkat di halaman depan
+        <input id="introInput" type="text" value="Semoga hari-harimu selalu dipenuhi hal-hal baik dan orang-orang yang tulus.">
+      </label>
+      <label class="full">Isi surat ulang tahun
+        <textarea id="letterInput">Selamat ulang tahun, ya. ♡
+
+Semoga di usia yang baru ini, kamu selalu diberi kesehatan, ketenangan, dan banyak alasan untuk tersenyum. Semoga hal-hal baik menemukan jalannya kepadamu, satu demi satu.
+
+Terima kasih sudah menjadi dirimu sendiri—seseorang yang kehadirannya membawa warna tersendiri. Jangan lupa untuk merayakan dirimu, bukan hanya hari ini, tapi juga di hari-hari biasa.
+
+Semoga semua doa baik yang kamu simpan diam-diam menemukan jalannya untuk menjadi nyata. Kamu pantas mendapatkan banyak kebahagiaan.</textarea>
+      </label>
+    </div>
+    <p class="subtitle" id="introText" style="font-size:1rem;margin-bottom:20px">Semoga hari-harimu selalu dipenuhi hal-hal baik dan orang-orang yang tulus.</p>
+    <button id="openBtn">Buka surat kecil ♡</button>
+    <section class="letter" id="letter"></section>
+    <div class="signature" id="signature" hidden>Dengan hangat, <span id="senderText"></span> ♡</div>
+    <footer>DIBUAT KHUSUS UNTUK HARI YANG ISTIMEWA</footer>
+  </main>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+$('photoInput').addEventListener('change',e=>{
+  const file=e.target.files&&e.target.files[0]; if(!file)return;
+  const reader=new FileReader();
+  reader.onload=ev=>{$('preview').src=ev.target.result;$('preview').hidden=false;$('placeholder').hidden=true};
+  reader.readAsDataURL(file);
+});
+function update(){
+  const name=$('nameInput').value.trim()||'My Favorite Person';
+  $('titleName').textContent=name;
+  $('introText').textContent=$('introInput').value;
+  $('senderText').textContent=$('senderInput').value.trim()||'Seseorang yang menyayangimu';
+}
+['nameInput','senderInput','introInput'].forEach(id=>$(id).addEventListener('input',update));
+$('openBtn').addEventListener('click',()=>{
+  update();
+  $('letter').textContent=$('letterInput').value;
+  $('letter').classList.add('show');
+  $('signature').hidden=false;
+  $('openBtn').textContent='Surat penuh doa untukmu ♡';
+});
+for(let i=0;i<15;i++){
+  const h=document.createElement('div');h.className='heart';h.textContent=['♡','♥','✦'][i%3];
+  h.style.left=(Math.random()*100)+'%';h.style.animationDelay=(Math.random()*8)+'s';h.style.animationDuration=(7+Math.random()*7)+'s';h.style.fontSize=(12+Math.random()*20)+'px';document.body.appendChild(h);
+}
+update();
+</script>
+</body>
+</html>
