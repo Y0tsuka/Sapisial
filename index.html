@@ -1,113 +1,586 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Untuk Hari Istimewamu ❤️</title>
-<style>
-:root{--wine:#4b071b;--wine2:#710d2b;--rose:#c45a73;--gold:#e7c58a;--cream:#fff4eb}
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:Georgia,'Times New Roman',serif;color:var(--cream);background:radial-gradient(circle at top,#7a1734 0,#3a0617 48%,#1d0310 100%);overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#f3d5a0 1px,transparent 1px);background-size:36px 36px}
-.wrap{width:min(920px,92%);margin:0 auto;padding:42px 0 60px;position:relative}
-.card{border:1px solid rgba(231,197,138,.65);border-radius:24px;padding:clamp(22px,5vw,48px);background:linear-gradient(145deg,rgba(91,8,32,.88),rgba(35,3,17,.92));box-shadow:0 24px 70px #12000899;text-align:center;position:relative;overflow:hidden}
-.eyebrow{letter-spacing:.28em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--gold)}
-h1{font-size:clamp(2.4rem,7vw,4.8rem);line-height:1.05;font-weight:normal;margin:18px 0 12px;color:#fff1dc}
-h1 span{color:var(--gold);font-style:italic}
-.subtitle{color:#f0cbd1;font-size:1.1rem;line-height:1.7;max-width:590px;margin:0 auto 26px}
-.ornament{color:var(--gold);letter-spacing:.5em;margin:20px 0}
-.photo-frame{width:min(300px,100%);height:300px;margin:0 auto 22px;padding:8px;border:1px solid var(--gold);border-radius:180px 180px 24px 24px;background:#fff1dc0d;box-shadow:0 0 35px #e7c58a20;overflow:hidden}
-.photo-frame img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
-.photo-placeholder{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;color:#f2cdd4;font:14px Arial,sans-serif;padding:20px}
-.photo-placeholder strong{font:normal 3.4rem Georgia}
-label.upload{display:inline-block;margin:4px auto 24px;padding:11px 18px;border:1px solid var(--gold);border-radius:30px;color:var(--gold);cursor:pointer;font:13px Arial,sans-serif;transition:.2s}
-label.upload:hover{background:#e7c58a1a}
-input[type=file]{display:none}
-.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:620px;margin:0 auto 22px;text-align:left}
-.fields label{font:12px Arial,sans-serif;color:#e8bdc8;display:block}
-.fields input,.fields textarea{margin-top:7px;width:100%;padding:12px 13px;border-radius:12px;border:1px solid #a54a62;background:#260411;color:#fff5ec;font:14px Arial,sans-serif;outline:none}
-.fields textarea{resize:vertical;min-height:75px}
-.full{grid-column:1/-1}
-button{border:0;border-radius:30px;padding:14px 25px;background:linear-gradient(120deg,#e7c58a,#c99550);color:#3c0717;font-weight:bold;cursor:pointer;box-shadow:0 7px 22px #12000855;font-size:14px}
-button:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.letter{display:none;max-width:650px;margin:28px auto 0;padding:25px 22px;border-top:1px solid #c9955066;border-bottom:1px solid #c9955066;line-height:1.9;color:#f8e5df;text-align:left;white-space:pre-line;animation:rise .8s ease}
-.letter.show{display:block}
-.signature{text-align:right;color:var(--gold);font-style:italic;margin-top:16px}
-footer{color:#d9a7b3;font:11px Arial,sans-serif;letter-spacing:.1em;margin-top:24px}
-.heart{position:fixed;bottom:-30px;color:#e6a2b0;opacity:0;pointer-events:none;animation:float 8s linear infinite}
-@keyframes float{0%{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.65}90%{opacity:.35}100%{transform:translateY(-110vh) rotate(30deg);opacity:0}}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:560px){.fields{grid-template-columns:1fr}.full{grid-column:auto}.photo-frame{height:260px;width:260px}.wrap{padding:20px 0 35px}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun!</title>
+  <style>
+    :root{
+      --maroon:#5a0f1e;
+      --maroon2:#7a172a;
+      --rose:#b43b57;
+      --cream:#fff1f4;
+      --white:#ffffff;
+      --shadow: rgba(0,0,0,.18);
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% 0%, #7a172a33, transparent 55%),
+                  radial-gradient(900px 500px at 90% 10%, #b43b5750, transparent 55%),
+                  linear-gradient(135deg, #2b0710, #5a0f1e);
+      color: var(--white);  
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 24px;
+    }
+
+    .card{
+      width:min(900px, 100%);
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 22px;
+      box-shadow: 0 18px 60px var(--shadow);
+      padding: 22px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* Dekorasi */
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:-80px;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(255,241,244,.20), transparent 35%),
+        radial-gradient(circle at 90% 10%, rgba(180,59,87,.20), transparent 40%),
+        radial-gradient(circle at 60% 80%, rgba(122,23,42,.25), transparent 45%);
+      pointer-events:none;
+      filter: blur(2px);
+    }
+
+    .left, .right{
+      position:relative;
+      z-index:1;
+    }
+
+    .title{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom: 10px;
+    }
+
+    .badge{
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--maroon2), var(--rose));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size: 22px;
+      box-shadow: 0 12px 30px rgba(180,59,87,.35);
+      border: 1px solid rgba(255,255,255,.22);
+    }
+
+    h1{
+      margin:0;
+      font-size: clamp(22px, 3vw, 34px);
+      letter-spacing: .3px;
+    }
+
+    p.sub{
+      margin: 10px 0 16px;
+      color: rgba(255,241,244,.92);
+      line-height: 1.5;
+      max-width: 52ch;
+    }
+
+    /* Area kado */
+    .gift{
+      margin-top: 10px;
+      background: rgba(255,255,255,.06);
+      border: 1px dashed rgba(255,255,255,.22);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .gift-row{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .candles{
+      display:flex;
+      align-items:flex-end;
+      gap:10px;
+      padding: 10px 10px 2px;
+    }
+
+    .candle{
+      width: 16px;
+      height: 70px;
+      background: linear-gradient(180deg, #f2f2f2, #cfcfcf);
+      border-radius: 10px;
+      position:relative;
+      box-shadow: inset 0 -10px 20px rgba(0,0,0,.15);
+    }
+
+    .candle::after{
+      content:"";
+      position:absolute;
+      top:-14px;
+      left:50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 18px;
+      background: linear-gradient(180deg, #ffe08a, #ff8a3d);
+      border-radius: 10px 10px 12px 12px;
+      opacity:.9;
+    }
+
+    .flame{
+      animation: flicker 1.2s infinite;
+    }
+
+    @keyframes flicker{
+      0%,100%{ transform: translateX(-50%) scale(1); opacity:.95; }
+      50%{ transform: translateX(-50%) scale(1.06); opacity:.75; }
+    }
+
+    .btns{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    button{
+      border:0;
+      cursor:pointer;
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-weight: 700;
+      transition: transform .12s ease, filter .12s ease, background .12s ease;
+    }
+
+    .btn-primary{
+      background: linear-gradient(135deg, var(--maroon2), var(--rose));
+      color: white;
+      box-shadow: 0 14px 40px rgba(180,59,87,.30);
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    .btn-primary:hover{ transform: translateY(-1px); filter: brightness(1.05); }
+
+    .btn-ghost{
+      background: rgba(255,255,255,.06);
+      color: var(--cream);
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    .btn-ghost:hover{ transform: translateY(-1px); background: rgba(255,255,255,.09); }
+
+    /* Teks ucapan interaktif */
+    .message{
+      margin-top: 12px;
+      background: rgba(0,0,0,.12);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 16px;
+      padding: 14px;
+      min-height: 92px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      overflow:hidden;
+    }
+
+    .message .lines{
+      flex:1;
+    }
+
+    .bubble{
+      display:inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(180,59,87,.18);
+      border:1px solid rgba(180,59,87,.35);
+      color: var(--cream);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .fade{
+      opacity:0;
+      transform: translateY(6px);
+      transition: opacity .35s ease, transform .35s ease;
+      color: rgba(255,241,244,.96);
+      line-height: 1.55;
+      font-size: 14.5px;
+    }
+
+    .fade.show{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* Sisi kanan */
+    .right{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      align-items:stretch;
+    }
+
+    .panel{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .panel h3{
+      margin:0 0 8px;
+      font-size: 16px;
+      color: rgba(255,241,244,.98);
+    }
+
+    .small{
+      margin:0;
+      color: rgba(255,241,244,.82);
+      line-height:1.5;
+      font-size: 13.5px;
+    }
+
+    .chips{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+
+    .chip{
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.10);
+      border:1px solid rgba(255,255,255,.14);
+      color: var(--cream);
+      font-weight: 700;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .12s ease, background .12s ease;
+    }
+    .chip:hover{ transform: translateY(-1px); background: rgba(255,255,255,.08); }
+
+    /* Confetti sederhana */
+    .confetti{
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      overflow:hidden;
+      z-index:0;
+    }
+
+    .confetti span{
+      position:absolute;
+      top:-20px;
+      left: var(--x);
+      width: 10px;
+      height: 14px;
+      border-radius: 3px;
+      background: var(--c);
+      opacity:.95;
+      transform: translateY(0) rotate(0deg);
+      animation: fall var(--t) linear forwards;
+    }
+
+    @keyframes fall{
+      to{
+        transform: translateY(110vh) rotate(360deg);
+        opacity: .9;
+      }
+    }
+
+
+    /* Foto Polaroid scrapbook */
+    .polaroid {
+      width: min(230px, 85%);
+      margin: 18px 0 22px;
+      padding: 10px 10px 14px;
+      background: #fffaf5;
+      border-radius: 3px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+      transform: rotate(-3deg);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .polaroid:hover {
+      transform: rotate(0deg) scale(1.03);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .polaroid img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center;
+      background: #eadde0;
+    }
+
+    .polaroid-caption {
+      color: #5a0f1e;
+      text-align: center;
+      font-family: "Segoe Print", "Comic Sans MS", cursive;
+      font-size: 14px;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 760px) {
+      .polaroid {
+        width: min(210px, 75%);
+        margin: 18px auto 22px;
+      }
+    }
+
+    /* Responsif */
+    @media (max-width: 760px){
+      .card{
+        grid-template-columns: 1fr;
+      }
+      .btns{ justify-content:flex-start; }
+      .candles{ padding-left: 0; }
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <main class="card">
-    <div class="eyebrow">A little Celebration From Your Friend</div>
-    <div class="ornament">✦ ❧ ✦</div>
-    <h1>Happy Birthday,<br><span id="titleName">Azzyyy</span></h1>
-    <p class="subtitle">Hari ini dunia terasa sedikit lebih indah, karena seseorang seistimewa kamu sedang merayakan hari lahirnya. ❤️</p>
+  <div class="card" role="region" aria-label="Kartu ulang tahun interaktif">
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
 
-    <div class="photo-frame" id="photoFrame">
-      <img src="image/1.jpg">
+    <div class="left">
+      <div class="title">
+        <div class="badge">😝</div>
+        <h1>HAPPY BIRTHDAYYYY! ✨</h1>
+      </div>
+
+
+      <!-- Foto Polaroid scrapbook: ganti foto-teman.jpg dengan nama file fotomu -->
+      <div class="polaroid">
+          <img
+           id="fotoKenangan"
+          src="image/1.jpg"
+           alt="Foto kenangan"
+           onclick="gantiFoto()"
+             style="cursor: pointer;"
+>
+        <div class="polaroid-caption">Nazzly Aqilla Nabil</div>
+      </div>
+
+      <p class="sub">
+        Untuk ke yang 16 Tahunn!
+      </p>
+
+      <div class="gift">
+        <div class="gift-row">
+          <div class="candles" aria-label="Lilin ulang tahun">
+            <div class="candle flame" style="animation-delay:0s"></div>
+            <div class="candle flame" style="animation-delay:.2s; height:64px"></div>
+            <div class="candle flame" style="animation-delay:.45s; height:72px"></div>
+            <div class="candle flame" style="animation-delay:.1s; height:60px"></div>
+          </div>
+
+          <div class="btns">
+            <button class="btn-primary" id="btnWish">🎁 Buka Pesan</button>
+            <button class="btn-ghost" id="btnRemix">🔄 Pesan Lain</button>
+          </div>
+        </div>
+
+        <div class="message" aria-live="polite">
+          <div class="lines">
+            <div class="bubble">Dibaca Yaaa Cantikk!</div>
+
+            <div class="fade" id="line1">Hari ini spesial banget! Semoga semuanya yang kamu inginkan berjalan lancar.</div>
+            <div class="fade" id="line2">Semoga umur baru ini bikin kamu makin bahagia, makin kuat, dan makin semangat!</div>
+            <div class="fade" id="line3">Tetap jadi diri kamu ya—aku bangga punya teman seperti kamu 😊</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <label class="upload" for="photoInput">♡ Pilih foto kenangan</label>
-    <input id="photoInput" type="file" accept="image/*">
 
-    <div class="fields">
-      <label>Nama yang berulang tahun
-        <input value="Azzyyy">
-      </label>
-      <label>Nama pengirim
-        <input id="senderInput" type="text" placeholder="Namamu" value="Seseorang yang menyayangimu">
-      </label>
-      <label class="full">Pesan singkat di halaman depan
-        <input id="introInput" type="text" value="Semoga hari-harimu selalu dipenuhi hal-hal baik dan orang-orang yang tulus.">
-      </label>
-      <label class="full">Isi surat ulang tahun
-        <textarea id="letterInput">Selamat ulang tahun, ya. ♡
+    <div class="right">
+      <div class="panel">
+        <h3>Wish The Best For U Yaaa</h3>
+        <p class="small">
+          Aku Harap kamuu.....
+        </p>
 
-Semoga di usia yang baru ini, kamu selalu diberi kesehatan, ketenangan, dan banyak alasan untuk tersenyum. Semoga hal-hal baik menemukan jalannya kepadamu, satu demi satu.
+        <div class="chips">
+          <div class="chip" data-type="happy">😄 Bahagia</div>
+          <div class="chip" data-type="luck">🍀 Beruntung</div>
+          <div class="chip" data-type="health">🌿 Sehat</div>
+          <div class="chip" data-type="dreams">🌟 Tercapai</div>
+        </div>
+      </div>
 
-Terima kasih sudah menjadi dirimu sendiri—seseorang yang kehadirannya membawa warna tersendiri. Jangan lupa untuk merayakan dirimu, bukan hanya hari ini, tapi juga di hari-hari biasa.
-
-Semoga semua doa baik yang kamu simpan diam-diam menemukan jalannya untuk menjadi nyata. Kamu pantas mendapatkan banyak kebahagiaan.</textarea>
-      </label>
+      <div class="panel">
+        <h3>🎶 Kotak atas bisa dipencet btw</h3>
+        <p class="small">
+          - Klik <b>Buka Pesan</b> untuk lihat isi ucapann.<br/>
+          - Klik <b>Pesan Lain</b> untuk isi lainnyaa.<br/>
+          - Kalo <b>Pesan Lain</b> diklik lagi bisa berubah ke yang lainn.<br/>
+          - Foto Kamu kalo diklik bisa berubah jugaaa.<br/>
+        </p>
+      </div>
     </div>
-    <p class="subtitle" id="introText" style="font-size:1rem;margin-bottom:20px">Semoga hari-harimu selalu dipenuhi hal-hal baik dan orang-orang yang tulus.</p>
-    <button id="openBtn">Buka surat kecil ♡</button>
-    <section class="letter" id="letter"></section>
-    <div class="signature" id="signature" hidden>Dengan hangat, <span id="senderText"></span> ♡</div>
-    <footer>DIBUAT KHUSUS UNTUK HARI YANG ISTIMEWA</footer>
-  </main>
-</div>
-<script>
-const $=id=>document.getElementById(id);
-$('photoInput').addEventListener('change',e=>{
-  const file=e.target.files&&e.target.files[0]; if(!file)return;
-  const reader=new FileReader();
-  reader.onload=ev=>{$('preview').src=ev.target.result;$('preview').hidden=false;$('placeholder').hidden=true};
-  reader.readAsDataURL(file);
-});
-function update(){
-  const name=$('nameInput').value.trim()||'My Favorite Person';
-  $('titleName').textContent=name;
-  $('introText').textContent=$('introInput').value;
-  $('senderText').textContent=$('senderInput').value.trim()||'Seseorang yang menyayangimu';
-}
-['nameInput','senderInput','introInput'].forEach(id=>$(id).addEventListener('input',update));
-$('openBtn').addEventListener('click',()=>{
-  update();
-  $('letter').textContent=$('letterInput').value;
-  $('letter').classList.add('show');
-  $('signature').hidden=false;
-  $('openBtn').textContent='Surat penuh doa untukmu ♡';
-});
-for(let i=0;i<15;i++){
-  const h=document.createElement('div');h.className='heart';h.textContent=['♡','♥','✦'][i%3];
-  h.style.left=(Math.random()*100)+'%';h.style.animationDelay=(Math.random()*8)+'s';h.style.animationDuration=(7+Math.random()*7)+'s';h.style.fontSize=(12+Math.random()*20)+'px';document.body.appendChild(h);
-}
-update();
-</script>
+  </div>
+
+  <script>
+    const btnWish = document.getElementById("btnWish");
+    const btnRemix = document.getElementById("btnRemix");
+
+    const line1 = document.getElementById("line1");
+    const line2 = document.getElementById("line2");
+    const line3 = document.getElementById("line3");
+
+    const confetti = document.getElementById("confetti");
+
+    const chipThemes = {
+      happy: [
+        "Semoga umur baru ini bikin kamu makin bahagiaa, makin sering senyumm 😄",
+        "Semoga hari-hari kamu penuh hal-hal baik dan orang-orang yang bikin aman dan nyamann.",
+        "Kamu pantas untuk bahagia,tetap semangat yaaa! ✨"
+      ],
+      luck: [
+        "Semoga langkahmu selalu dimudahkan dan rezekinya lancar 🍀",
+        "Semoga setiap rencana kamuu ada jalannyaa, perlahan tapi pasti.",
+        "Tetap percaya pada diri sendiri yaww 😊"
+      ],
+      health: [
+        "Semoga selalu sehatt,tidak mudah sakitt dan kuat menjalani semua aktivitas 🌿",
+        "Semoga pikiran kamuu juga tenang dan hatimu terasa ringan.",
+        "Jaga dirimu baik-baik, yaaaa! 💗"
+      ],
+      dreams: [
+        "Semoga impian kamu bisa tercapai satu per satuu yaa 🌟",
+        "Teruslah melangkah,aku yakin kamu bisaa",
+        "Selamat ulang tahunnn! Semoga ini jadi awal yang bagus untukmuu 😄"
+      ]
+    };
+
+    const defaultThemes = [
+      [
+        "Hari ini spesial banget! Semoga semuanya yang kamu inginkan berjalan lancarrr.",
+        "Semoga umur baru ini bikin kamu makin bahagia, makin kuat, dan makin semangat!",
+        "Tetap jadi diri kamu yaaa,aku senang punya teman kaya U 😊"
+      ],
+      [
+        "Selamat ulang tahun! Semoga hari kamu dipenuhi senyumm dan kebahagiaan (dan ga sakit) 🎉",
+        "Semoga segala yang baik mengalir untuk kamuu, tanpa harus menunggu lamaa.",
+        "Makin bertambah dewasa, makin ribet pusing dan stress,jadiii semangattt! ✨"
+      ],
+      [
+        "Semoga umur baru ini menghadirkan lebih banyak kesempatan dan hal-hal manis (kaya kamu ror).",
+        "Semoga kamu selalu dikelilingi orang-orang yang baik dan suportif yaa.",
+        "Semoga kamu terus bertumbuh, im so proud of you, I always knew you could do it! 💗"
+      ]
+    ];
+
+    let currentIndex = 0;
+
+    function resetLines(){
+      [line1, line2, line3].forEach(el => {
+        el.classList.remove("show");
+        el.style.transitionDelay = "0ms";
+      });
+    }
+
+    function showLines(lines){
+      resetLines();
+      line1.textContent = lines[0];
+      line2.textContent = lines[1];
+      line3.textContent = lines[2];
+
+      // tampil bertahap
+      setTimeout(() => line1.classList.add("show"), 80);
+      setTimeout(() => line2.classList.add("show"), 260);
+      setTimeout(() => line3.classList.add("show"), 450);
+
+      // confetti
+      launchConfetti(26);
+    }
+
+    function launchConfetti(count=24){
+      confetti.innerHTML = "";
+      const colors = ["#ff8a3d", "#ffe08a", "#b43b57", "#7a172a", "#ffffff", "#ff6b9a"];
+      for(let i=0;i<count;i++){
+        const span = document.createElement("span");
+        const x = Math.random()*100; // persen
+        const c = colors[Math.floor(Math.random()*colors.length)];
+        const t = 1.4 + Math.random()*1.2; // detik
+        const sizeW = 7 + Math.random()*7;
+
+        span.style.setProperty("--x", x + "%");
+        span.style.setProperty("--c", c);
+        span.style.setProperty("--t", t + "s");
+        span.style.width = sizeW + "px";
+
+        // posisi awal sedikit bervariasi
+        span.style.top = (-10 - Math.random()*20) + "px";
+        span.style.left = `calc(${x}% - ${sizeW/2}px)`;
+
+        confetti.appendChild(span);
+      }
+      // bersihkan setelah animasi selesai
+      setTimeout(() => confetti.innerHTML = "", 2600);
+    }
+
+    function getNextTheme(){
+      currentIndex = (currentIndex + 1) % defaultThemes.length;
+      return defaultThemes[currentIndex];
+    }
+
+    // Default
+    showLines(defaultThemes[currentIndex]);
+
+    btnWish.addEventListener("click", () => {
+      // tampilkan versi saat ini (tidak mengubah tema), tapi tetap confetti & animasi
+      showLines(defaultThemes[currentIndex]);
+    });
+
+    btnRemix.addEventListener("click", () => {
+      showLines(getNextTheme());
+    });
+
+    // Chip interaktif
+    document.querySelectorAll(".chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        const type = chip.getAttribute("data-type");
+        if(chipThemes[type]){
+          // saat pilih chip, jangan ubah currentIndex
+          showLines(chipThemes[type]);
+        }
+      });
+    });
+  const daftarFoto = [
+    "image/1.jpg",
+    "image/2.jpg",
+    "image/3.jpg",
+    "image/4.jpg",
+    "image/5.jpg",
+    "image/6.jpg"
+  ];
+
+  let nomorFoto = 0;
+
+  function gantiFoto() {
+    nomorFoto = (nomorFoto + 1) % daftarFoto.length;
+
+    document.getElementById("fotoKenangan").src =
+      daftarFoto[nomorFoto];
+  }
+  </script>
 </body>
 </html>
